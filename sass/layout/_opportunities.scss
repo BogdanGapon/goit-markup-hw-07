@@ -2,15 +2,15 @@
     display: flex;
 }
 
-.list-box>.item {
+.list-box>.list-box__item {
     width: 270px;
 }
 
-.list-box .item:not(:last-child) {
+.list-box .list-box__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.icon-element {
+.list-box__icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@
     background-color: #f5f4fa;
 }
 
-.small-title {
+.list-box__small-title {
     margin-bottom: 10px;
 
     line-height: 1.14;
@@ -33,7 +33,7 @@
     font-weight: 700;
 }
 
-.text-title {
+.list-box__text-title {
     font-size: var(--font-text);
     letter-spacing: 0.03em;
     line-height: 1.71;

@@ -63,12 +63,12 @@ header a {
   padding: 24px 0px;
 }
 
-.flex-container {
+.logo-wrapper {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.logo-wrapper__header-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -79,11 +79,11 @@ header a {
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-logo:hover, .header-logo:focus {
+.logo-wrapper__header-logo:hover, .logo-wrapper__header-logo:focus {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.logo-span {
+.logo-wrapper__logo-span {
   color: var(--hover-color);
 }
 
@@ -91,7 +91,7 @@ header a {
   display: flex;
 }
 
-.header-list > .item:not(:last-child) {
+.header-list > .marker-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -107,8 +107,7 @@ header a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.marker-list .nav-link:hover, .marker-list .nav-link:focus {
   color: var(--hover-color);
 }
 
@@ -127,7 +126,7 @@ header a {
   border-radius: 2px;
 }
 
-.header-list-contact > .contact-item:first-child {
+.header-list-contact > .marker-list__contact-item:first-child {
   margin-right: 50px;
 }
 
@@ -150,12 +149,11 @@ header a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: var(--hover-color);
 }
 
-.icon-header-mail {
+.contact-link__icon-header-mail {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -174,7 +172,7 @@ header a {
   background-color: #2f303a;
 }
 
-.main-title {
+.container__main-title {
   margin-bottom: 30px;
   color: var(--secondary-color);
   font-weight: 900;
@@ -185,7 +183,7 @@ header a {
   text-align: center;
 }
 
-.btn-order-service {
+.container__btn-order-service {
   padding: 10px 32px;
   border: 0px;
   border-radius: 4px;
@@ -201,8 +199,7 @@ header a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-order-service:hover,
-.btn-order-service:focus {
+.container__btn-order-service:hover, .container__btn-order-service:focus {
   background-color: var(--hover-color);
 }
 
@@ -210,15 +207,15 @@ header a {
   display: flex;
 }
 
-.list-box > .item {
+.list-box > .list-box__item {
   width: 270px;
 }
 
-.list-box .item:not(:last-child) {
+.list-box .list-box__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.icon-element {
+.list-box__icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -229,7 +226,7 @@ header a {
   background-color: #f5f4fa;
 }
 
-.small-title {
+.list-box__small-title {
   margin-bottom: 10px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -239,7 +236,7 @@ header a {
   font-weight: 700;
 }
 
-.text-title {
+.list-box__text-title {
   font-size: var(--font-text);
   letter-spacing: 0.03em;
   line-height: 1.71;
