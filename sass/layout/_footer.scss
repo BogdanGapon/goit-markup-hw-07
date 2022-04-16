@@ -2,6 +2,10 @@
     background: #2f303a;
     padding-bottom: 60px;
     padding-top: 60px;
+
+& .item:not(:last-child) {
+    margin-bottom: 9px;
+}
 }
 
 .footer-logo {
@@ -16,15 +20,11 @@
     color: var(--secondary-color);
 
     transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-logo:hover,
-.footer-logo:focus {
+&:hover,
+&:focus {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.footer .item:not(:last-child) {
-    margin-bottom: 9px;
 }
 
 .footer-link-contact {
@@ -37,12 +37,14 @@
     font-style: normal;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-link-contact:hover,
-.footer-link-contact:focus {
+&:hover,
+&:focus {
     color: var(--hover-color);
 }
+}
+
+
 
 .footer-link-adress {
     color: var(--secondary-color);
@@ -86,11 +88,12 @@
 
 .item-footer-icon {
     list-style: none;
-}
 
-.item-footer-icon:not(:last-child) {
+&:not(:last-child) {
     margin-right: 10px;
 }
+}
+
 
 .footer-link-icon {
     display: flex;
@@ -106,12 +109,13 @@
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-link-icon:hover,
-.footer-link-icon:focus {
+&:hover,
+&:focus {
     background-color: var(--hover-color);
 }
+}
+
 
 /* STYLES FOR ICON END */
 .contact-form-mail-label {
@@ -138,11 +142,13 @@
     border-radius: 4px;
     background-color: #2F303A;
     outline: none;
-}
 
-.contact-form-mail::placeholder {
+&::placeholder {
     color: rgba(255, 255, 255, 0.6);
 }
+
+}
+
 
 .contact-form-submit-button {
     display: inline-flex;
@@ -164,11 +170,11 @@
 
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.contact-form-submit-button:focus,
-.contact-form-submit-button:hover {
+&:focus,
+&:hover {
     background-color: rgba(33, 150, 243, 0.9);
+}
 }
 
 .btn-footer-icon {
